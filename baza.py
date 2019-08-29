@@ -10,7 +10,6 @@ def main():
 url = "http://api.nbp.pl/api/exchangerates/tables/C/today/?format=json"
 
 r = requests.get(url)
-print(r)
 
 if __name__ == "__main__":
     kalk.run()
