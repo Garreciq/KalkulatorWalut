@@ -1,11 +1,11 @@
 import requests
-from flask import Flask
+from flask import Flask, render_template
 
 kalk = Flask(__name__)
 
 @kalk.route("/")
 def main():
-    return "First Page"
+    return render_template('index.html')
 
 url = "http://api.nbp.pl/api/exchangerates/tables/C/today/?format=json"
 
